@@ -50,3 +50,21 @@ a
 .right
   float: right
 
+input[name=search]
+  width: 362px
+  height: 30px
+  box-sizing: border-box
+  border: 2px solid $accent
+  border-radius: 50px
+  background-color: white
+  text-align: center
+  &:focus, &:active
+    outline: none
+  &::-webkit-input-placeholder
+    color: $accent
+  &::-moz-placeholder
+    color: $accent
+  &:-moz-placeholder
+    color: $accent
+  &:-ms-input-placeholder
+    color: $accent
