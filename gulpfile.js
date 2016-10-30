@@ -20,7 +20,7 @@ var fontAwesome = require('node-font-awesome');
 
 gulp.task('fontAwesome', function() {
   gulp.src(fontAwesome.fonts)
-    .pipe(gulp.dest('./app/fonts/fontAwesome'));
+    .pipe(gulp.dest('./app/fonts/FontAwesome'));
 });
 
 gulp.task('browser-sync', function () {
@@ -44,7 +44,8 @@ gulp.task('fileinclude', function () {
 gulp.task('sass', ['headersass'], function () {
     return gulp.src('app/sass/**/*.sass')
         .pipe(sass({
-            includePaths: bourbon.includePaths
+            includePaths: bourbon.includePaths,
+            includePaths: bourbon.with(fontAwesome.scssPath)
         }).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))

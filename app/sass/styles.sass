@@ -1,0 +1,72 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//MEDIA STYLES
+@import "media"
+//MEDIA STYLES END
+
+//BASE STYLES
+@import "base"
+//BASE STYLES END
+
+//HEADER STYLES
+.header
+  background: white
+  height: 216px
+  &__top
+    background: $accent
+    height: 33px
+
+    &-link
+      display: block
+      line-height: 33px
+      width: 33px
+      color: #ffffff
+      
+    &-lang
+      text-align: center
+      float: left
+      @include transition
+      &-row
+        list-style-type: none
+        display: none
+        position: absolute
+        background-color: white
+        min-width: 33px
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+        padding: 0
+        margin: 0
+      &:hover &-row
+        display: block
+      &:hover .header__top-link
+        background: $accent_hover
+        color: white
+      &-link
+        display: block
+        line-height: 33px
+        width: 33px
+        color: black
+        @include transition
+        &:hover
+          background: rgba(96, 96, 96, 0.1)
+          color: black
+    
+    &-menu
+      padding: 0
+      margin: 0
+      list-style-type: none
+      display: inline-block
+      float: right
+      &-item
+        float: left
+        padding:
+          left: 15px
+          right: 15px
+      &-link
+        display: block
+        line-height: 33px
+        color: #ffffff
+
+//HEADER STYLES END
+

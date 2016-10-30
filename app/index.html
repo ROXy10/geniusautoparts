@@ -23,7 +23,7 @@
     <!-- Load Fonts CSS End -->
 
     <!-- Load Custom CSS Start -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <!-- Load Custom CSS End -->
 
 </head>
@@ -32,19 +32,23 @@
 
 <!--HEADER-->
 <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="header__top">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
                 <div class=".col-lg-1  .col-lg-offset-6">
-                    <div class="header__top-lang">
-                        EN
+                    <div class="header__top-lang dropdown clearfix">
+                        <a class="header__top-link" href="#">EN <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="header__top-lang-row">
+                            <li class="header__top-lang-item"><a class="header__top-lang-link" href="#">EN</a></li>
+                            <li class="header__top-lang-item"><a class="header__top-lang-link" href="#">DE</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-5 left">
+                <div class="col-lg-5 right">
                     <ul class="header__top-menu">
-                        <li class="header__top-item"><a clas="header__top-link" href="#">Admin</a></li>
-                        <li class="header__top-item"><a clas="header__top-link" href="#">Dashboard</a></li>
-                        <li class="header__top-item"><a clas="header__top-link" href="#">Profile</a></li>
+                        <li class="header__top-menu-item"><a class="header__top-menu-link" href="#">Admin</a></li>
+                        <li class="header__top-menu-item"><a class="header__top-menu-link" href="#">Dashboard</a></li>
+                        <li class="header__top-menu-item"><a class="header__top-menu-link" href="#">Profile</a></li>
                     </ul>
                 </div>
             </div>
